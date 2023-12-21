@@ -1,0 +1,17 @@
+body {
+	font-size: large;
+}
+
+#magassaggal:checked ~ #szoggel-container {
+    display: none;
+}
+
+#szoggel:checked ~ #magassaggal-container {
+    display: none;
+}
+
+input[type=number] {
+	max-width: 80px;
+	display: block;
+}
+

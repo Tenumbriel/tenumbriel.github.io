@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Paralelogramma területe</title>
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="script/script.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        Paralelorgamma területe:
+        <label for="magassaggal">oldallal és magassággal</label><input type="radio" name="csere" id="magassaggal" checked />
+        vagy
+        <label for="szoggel">szöggel és két oldallal</label><input type="radio" name="csere" id="szoggel" />
+        <div id="magassaggal-container">
+            <label for="oldal"> Oldal hossza: </label>
+            <input id="oldal" type="number" min="1" />
+            <label for="magassag"> Magasság: </label>
+            <input id="magassag" type="number" min="1" />
+        </div>
+
+        <div id="szoggel-container">
+            <label for="szog"> Szög: </label>
+            <input id="szog" type="number" min="1" max="179" />
+            <label for="a-oldal"> A oldal: </label>
+            <input id="a-oldal" type="number" min="1" />
+            <label for="b-oldal"> B oldal: </label>
+            <input id="b-oldal" type="number" min="1" />
+        </div>
+        <div>
+            <button onclick="szamol()">Számol</button>
+            <input id="terulet" disabled />
+        </div>
+    </body>
+</html>

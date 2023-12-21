@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Termmékek</title>
+        <script src="script/script.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+    <body>
+        <div class="tartalom">
+            <div class="hozzaado">
+                <div>
+                    Add meg 5-6-7 vagy több termék fantázianevét és árát:
+                    <div class="input">
+                        <div>
+                            <label> Fantázianév: </label>
+                            <input id="nev" />
+                        </div>
+                        <div>
+                            <label for="ar"> Ár: </label>
+                            <input id="ar" type="number" />
+                        </div>
+                    </div>
+                    <button onclick="hozzaad()">Hozzáad</button>
+                </div>
+                <div class="eredmeny">
+                    <div>Átlag: <span id="atlag"></span></div>
+                    <div>Szórás: <span id="szoras"></span></div>
+                    <div>Legolcsóbb termék: <span id="legolcsobb"></span></div>
+                </div>
+            </div>
+            <div class="termeklista">
+                Hozzáadott termékek:
+                <ul id="termekek"></ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+.tartalom {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+.linkek {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    margin: auto;
+    animation-name: imgmove;
+    animation-duration: 15s;
+}
+
+img:hover {
+    filter: opacity(0);
+    transition: 800ms;
+}
+
+@keyframes imgmove {
+    0%   { position: initial; }
+    15%  { box-shadow: 10px 10px 20px red; }
+    30%  { position: fixed; top: 40%; left: calc(100% - 300px); }
+    40%  { position: fixed;top: 20%; left: 0%; }
+    50%  { position: fixed;top: 40%; left: 5%; }
+    55%  { position: fixed;top: 80%; left: calc(100% - 300px);; }
+    65%  { position: fixed; top: 60%; left: 0%; }
+    70%  { position: fixed; top: 10%; left: 50%; }
+    80%  { position: fixed; top: 40%; left: 80%; }
+    85%  { position: fixed; top: 60%; left: calc(100% - 300px);; }
+    90%  { position: fixed;top: 80%; left: 0%; }
+    100% { position: initial; }
+}

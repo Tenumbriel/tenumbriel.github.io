@@ -1,0 +1,41 @@
+body {
+	font-size: large;
+	background-image: url("../img/neurons-bright-background.jpg");
+	color: rgb(234, 229, 219);
+	background-size: 100vw 100vh;
+}
+
+.tartalom {
+	display: flex;
+	max-width: 1000px;
+	margin: auto;
+	justify-content: center;
+	background-color: rgba(128, 128, 128, 0.4);
+	border-radius: 15px;
+
+}
+
+.hozzaado {
+	display: flex;
+	flex-direction: column;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+}
+
+.input div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.eredmeny {
+	display: flex;
+	flex-direction: column;
+}
+
+.termeklista {
+	margin-left: 20px;
+	background-color: rgba(128, 128, 128, 0.4);
+}
